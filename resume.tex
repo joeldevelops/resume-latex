@@ -1,0 +1,138 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Joel}{Milligan}
+\title{Software Engineer}                               % optional, remove / comment the line if not wanted
+\address{Amsterdam}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+31 6 38 56 86 53}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{joeldevelops@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{linkedin.com/in/joel-develops/}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{Engineer with Frontend and Backend development experience focused on writing clean, easily-readible, and tested code. Passionate about travel, music-making, film, and getting out of my comfort zone. Up to 3 references upon request.}
+
+\section{Relevant Work Experience}
+
+\vspace{1pt}
+
+\begin{itemize}
+
+\item{\cventry{2022--Present}{Backend Engineer}{GUTS Tickets/Get Protocol}{Amsterdam, NL}{}{\vspace{3pt} Working on backend python (Django) and golang (fasthttp) webservices together with RabbitMQ and PostgresSQL database. Also working on a React Native app and was able to improve the check-in experience for users at events by reducing failing codes within the app by 10\%.}}
+
+\vspace{6pt}
+
+\item{\cventry{2020--2022}{Full-Stack Engineer}{USAA}{San Antonio, TX - Remote}{}{\vspace{3pt}Worked with nodeJS and python backend webapplications for Slack and Box integrations. Helped to onboard USAA by migrating their 65,000 employees from Skype onto Slack.}}
+
+\vspace{6pt}
+
+\item{\cventry{2018--2020}{Platform (Backend) Engineer}{Datasite}{NYC}{}{\vspace{3pt}Worked on nodeJS microservices, some of which used GraphQL along with RMQ and Mongo. Designed and coordinated the team through a Database schema redesign and migration that reduced load times from over 9000 miliseconds to under 1500 miliseconds for the most important queries.}}
+
+\vspace{6pt}
+
+\item{\cventry{2018}{Microservices Engineer}{Universal Studios}{Orlando, FL}{}{\vspace{3pt}Worked in nodeJS microservices using express web framework. Later was placed as lead of a 5-person team with the goal of rewriting several microservices at the park to be eventually consistent instead of strongly consistent.}}
+
+\vspace{6pt}
+
+\item Additional history available on request.
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2022--Present}{Networked Systems Performance, Distributed Algorithms, Adaptive Software, ML/AI}{VU/UvA Joint Master's Degree in Software Engineering and Green IT}{Amsterdam, NL}{}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Technical Proficiencies}
+
+\vspace{4pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages:} NodeJS/Typescript, Python, Golang.
+
+\vspace{4pt}
+
+\item \textbf{Tools and Frameworks:} Git, Gitflow, Gitlab/Github CI, Kubernetes, PostgresSQL, MongoDB, Docker, NPM/Yarn, React, React Native.
+
+\vspace{4pt}
+
+\item \textbf{Interpersonal:} Communication within and across teams, comfortable presenter, proactive.
+
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
